@@ -1,10 +1,10 @@
-package com.api.controleestacionamento;
+package com.api.parkingcontrol;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ControleEstacionamentoApplicationTests {
+class ParkingControlApplicationTests {
 
 	@Test
 	void contextLoads() {

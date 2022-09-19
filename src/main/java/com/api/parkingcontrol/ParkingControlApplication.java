@@ -1,13 +1,13 @@
-package com.api.controleestacionamento;
+package com.api.parkingcontrol;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ControleEstacionamentoApplication {
+public class ParkingControlApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ControleEstacionamentoApplication.class, args);
+		SpringApplication.run(ParkingControlApplication.class, args);
 	}
 
 }

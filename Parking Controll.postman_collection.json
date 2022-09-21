@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "fd5c31bc-f91c-4d1d-828c-8c52f2a03d41",
+		"name": "Parking Controll",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Enviando dados",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"parkingSpotNumber\": \"205jhh8\",\r\n    \"licensePlateCar\": \"20hjh52\",\r\n    \"brandCar\": \"45h4hj5\",\r\n    \"modelCar\": \"uhnjho\",\r\n    \"colorCar\": \"verjhdhe\",\r\n    \"responsibleName\": \"Ajhnhtonia\",\r\n    \"apartment\": \"2Ahjhs\",\r\n    \"block\": \"hjh5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/parking-spot",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"parking-spot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista Completa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/parking-spot",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"parking-spot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/parking-spot/7c86d74d-ad2f-4c82-af44-436b119463c4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"parking-spot",
+						"7c86d74d-ad2f-4c82-af44-436b119463c4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/parking-spot/7c86d74d-ad2f-4c82-af44-436b119463c4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"parking-spot",
+						"7c86d74d-ad2f-4c82-af44-436b119463c4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizando dados",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"b7d7dbbd-4b9f-4c7d-a2f2-1d9fea9ef80b\",\r\n    \"parkingSpotNumber\": \"205h8\",\r\n    \"licensePlateCar\": \"20h52\",\r\n    \"brandCar\": \"45h4ff\",\r\n    \"modelCar\": \"uhno\",\r\n    \"colorCar\": \"verdhe\",\r\n    \"registrationDate\": \"2022-09-20T12:04:33.861541\",\r\n    \"responsibleName\": \"Anhtonia\",\r\n    \"apartment\": \"2Ahgs\",\r\n    \"block\": \"h5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/parking-spot/b7d7dbbd-4b9f-4c7d-a2f2-1d9fea9ef80b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"parking-spot",
+						"b7d7dbbd-4b9f-4c7d-a2f2-1d9fea9ef80b"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

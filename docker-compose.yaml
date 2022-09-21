@@ -13,5 +13,15 @@ services:
     env_file:
       - config/db-prod.env
 
+  api-parking-control:
+    depends_on:
+      - postgres
+    build: .
+    ports:
+      - "8081:8081"
+    restart: always
+    env_file:
+      - config/db-prod.env
+
 volumes:
   db_data: {}
